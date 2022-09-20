@@ -14,7 +14,6 @@ local_settings.macbook
 *.pem
 db.sqlite3
 media
-csv_files/
 
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
 # in your Git repository. Update and uncomment the following line accordingly.
@@ -76,10 +75,6 @@ coverage.xml
 *.mo
 
 # Django stuff:
-
-# Flask stuff:
-instance/
-.webassets-cache
 
 # Scrapy stuff:
 .scrapy
@@ -153,21 +148,7 @@ dmypy.json
 # files are created from templates by update_settings.py
 curl-format.txt
 
-# secret files that should not be in source control
-alvcloud_worker_id_rsa
-alvcloud_worker_id_rsa.pub
-
 boundaries
 playground.py
 uwsgi.ini
-alvcloud/o_local_settings.py
 
-### Keys ###
-**/*.pub
-**/*.pem
-
-### Vagrant ###
-.vagrant/
-*.box
-
-!docker.d/alvcloud_bundle.pem
